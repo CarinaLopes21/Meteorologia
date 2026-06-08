@@ -1,0 +1,111 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0d1b2a;
+  color: #e0e0e0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+#controls label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#citySelect {
+  padding: 8px 14px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #1b2a3b;
+  color: #eee;
+  cursor: pointer;
+}
+
+/* Container to lay out the Canvas Art and the Text Data side-by-side */
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+/* Canvas styling */
+canvas {
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+#display {
+  background: #1b2a3b;
+  border-radius: 12px;
+  padding: 24px;
+  flex: 1;
+  min-width: 320px;
+}
+
+#display h2 {
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+  color: #90cdf4;
+}
+
+.day-card {
+  background: #0d1b2a;
+  border: 1px solid #2d3f52;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+.day-card:hover {
+  background: #152a3a;
+  border-color: #3d4f62;
+  transform: translateY(-2px);
+}
+
+.date-header {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #90cdf4;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #2d3f52;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-line {
+  font-size: 0.95rem;
+  color: #f6ad55;
+  font-weight: 500;
+}
+
+#loading {
+  color: #aaa;
+  font-style: italic;
+}
